@@ -1,2 +1,15 @@
-package org.microservice1.authentication.auth.model;public class LoginRequest {
+package org.microservice1.authentication.auth.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class LoginRequest {
+    private String email;
+    private String password;
 }
