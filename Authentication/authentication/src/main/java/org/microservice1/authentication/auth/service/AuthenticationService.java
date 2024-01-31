@@ -21,13 +21,19 @@ public class AuthenticationService {
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
     public AuthResponse register(RegisterRequest request) {
+
         var user = User.builder()
                 .name(request.getName())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .roles(Roles.USER)
                 .build();
-        userRepo.save(user);
+        try {
+            userRepo.save(user);
+            System.out.println("User registered successfully: " + user.getEmail());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         var jwtToken = jwtUtil.generateToken(user);
         return AuthResponse.builder()
                 .token(jwtToken)
