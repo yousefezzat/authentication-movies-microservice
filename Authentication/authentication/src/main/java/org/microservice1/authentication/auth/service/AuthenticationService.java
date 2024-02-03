@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.microservice1.authentication.auth.model.AuthResponse;
 import org.microservice1.authentication.auth.model.LoginRequest;
 import org.microservice1.authentication.auth.model.RegisterRequest;
+import org.microservice1.authentication.exception.EmailAlreadyExistsException;
 import org.microservice1.authentication.jwt.JwtUtil;
 import org.microservice1.authentication.user.entity.Roles;
 import org.microservice1.authentication.user.entity.User;
@@ -21,6 +22,10 @@ public class AuthenticationService {
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
     public AuthResponse register(RegisterRequest request) {
+        // Check if the email already exists
+        if (userRepo.existsByEmail(request.getEmail())) {
+            throw new EmailAlreadyExistsException("Email is already registered");
+        }
 
         var user = User.builder()
                 .name(request.getName())
@@ -28,18 +33,18 @@ public class AuthenticationService {
                 .password(passwordEncoder.encode(request.getPassword()))
                 .roles(Roles.USER)
                 .build();
-        try {
-            userRepo.save(user);
-            System.out.println("User registered successfully: " + user.getEmail());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
+
+        userRepo.save(user);
+        System.out.println("User registered successfully: " + user.getEmail());
+
+
         var jwtToken = jwtUtil.generateToken(user);
         return AuthResponse.builder()
                 .token(jwtToken)
                 .build();
-
     }
+
 
     public AuthResponse login(LoginRequest request) {
 

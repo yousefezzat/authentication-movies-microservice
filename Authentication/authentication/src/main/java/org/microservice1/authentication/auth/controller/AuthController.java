@@ -7,7 +7,10 @@ import org.microservice1.authentication.auth.model.AuthResponse;
 import org.microservice1.authentication.auth.model.LoginRequest;
 import org.microservice1.authentication.auth.model.RegisterRequest;
 import org.microservice1.authentication.auth.service.AuthenticationService;
+import org.microservice1.authentication.exception.EmailAlreadyExistsException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.ErrorResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,8 +27,13 @@ public class AuthController {
     private final AuthenticationService authenticationService;
 
     @PostMapping("/register")
-    public ResponseEntity<AuthResponse> register(@RequestBody RegisterRequest request) {
-        return ResponseEntity.ok(authenticationService.register(request));
+    public ResponseEntity<?> register(@RequestBody RegisterRequest request) {
+        try {
+            AuthResponse authResponse = authenticationService.register(request);
+            return ResponseEntity.ok(authResponse);
+        } catch (EmailAlreadyExistsException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
     }
 
     @PostMapping("/login")
