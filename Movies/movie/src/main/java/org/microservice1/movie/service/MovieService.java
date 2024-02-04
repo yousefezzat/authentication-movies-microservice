@@ -3,7 +3,8 @@ package org.microservice1.movie.service;
 import lombok.RequiredArgsConstructor;
 import org.microservice1.movie.entity.Movie;
 import org.microservice1.movie.client.AuthenticationServiceClient;
-
+import org.microservice1.movie.exception.MovieNotFoundException;
+import org.microservice1.movie.exception.UnauthorizedAccessException;
 import org.microservice1.movie.repository.MovieRepo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -20,25 +21,37 @@ public class MovieService {
 
     public Page<Movie> getAllMovies(Pageable pageable, String authorizationHeader) {
         // Validate token before making the request
-        validateToken(authorizationHeader);
+        ResponseEntity<String> response = validateToken(authorizationHeader);
+        if (response.getStatusCode().is2xxSuccessful()) {
+            return movieRepository.findAll(pageable);
+        }
+        else
+        {
+            throw new UnauthorizedAccessException("Unauthorized access");
+        }
 
-        return movieRepository.findAll(pageable);
     }
+
     public List<Movie> getAllMoviesWithoutTokenForLanding() {
         return movieRepository.findAll();
     }
 
     public Movie getMovieById(Integer id, String authorizationHeader) {
-        validateToken(authorizationHeader);
+        ResponseEntity<String> response = validateToken(authorizationHeader);
+        if (response.getStatusCode().is2xxSuccessful()) {
+            return movieRepository.findById(id)
+                    .orElseThrow(() -> new MovieNotFoundException("Movie not found with ID: " + id));        }
+        else
+        {
+            throw new UnauthorizedAccessException("Unauthorized access");
+        }
 
-        return movieRepository.findById(id).orElse(null);
+
     }
 
-    public ResponseEntity<String> validateToken(String authorizationHeader) {
+    private ResponseEntity<String> validateToken(String authorizationHeader) {
         // Call the Authentication microservice to validate the token
         return authenticationServiceClient.validateToken(authorizationHeader);
 
-
     }
 }
-
