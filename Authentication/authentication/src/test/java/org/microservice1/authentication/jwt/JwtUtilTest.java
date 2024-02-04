@@ -12,6 +12,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.test.util.ReflectionTestUtils;
+
+import java.time.Instant;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -69,6 +72,14 @@ class JwtUtilTest {
         UserDetails userDetails = user;
         String token = jwtUtil.generateToken(userDetails);
         assertTrue(jwtUtil.isTokenValid(token, userDetails));
+    }
+    @Test
+    void testValidateToken() {
+        String token = generateValidToken();
+
+        Claims claims = jwtUtil.extractAllClaims(token);
+
+        assertTrue(claims.getExpiration().after(Date.from(Instant.now())));
     }
 
     @Test

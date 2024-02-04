@@ -8,6 +8,7 @@ import org.microservice1.authentication.auth.model.LoginRequest;
 import org.microservice1.authentication.auth.model.RegisterRequest;
 import org.microservice1.authentication.auth.service.AuthenticationService;
 import org.microservice1.authentication.exception.EmailAlreadyExistsException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.ErrorResponse;
@@ -24,7 +25,8 @@ import java.io.IOException;
 @RequiredArgsConstructor
 public class AuthController {
 
-    private final AuthenticationService authenticationService;
+    @Autowired
+    private AuthenticationService authenticationService;
 
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterRequest request) {

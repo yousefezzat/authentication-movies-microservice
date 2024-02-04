@@ -3,16 +3,12 @@ package org.microservice1.movie.service;
 import lombok.RequiredArgsConstructor;
 import org.microservice1.movie.entity.Movie;
 import org.microservice1.movie.client.AuthenticationServiceClient;
-import org.microservice1.movie.exception.ForbiddenException;
-import org.microservice1.movie.exception.TokenValidationException;
-import org.microservice1.movie.exception.UnauthorizedException;
+
 import org.microservice1.movie.repository.MovieRepo;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
 
 import java.util.List;
 

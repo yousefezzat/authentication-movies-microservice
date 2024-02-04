@@ -36,7 +36,7 @@ public class AuthenticationService {
 
 
         userRepo.save(user);
-        System.out.println("User registered successfully: " + user.getEmail());
+//        System.out.println("User registered successfully: " + user.getEmail());
 
 
         var jwtToken = jwtUtil.generateToken(user);
