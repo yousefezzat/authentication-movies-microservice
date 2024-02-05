@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2991a732-abf0-4d2a-8669-8d13476c9d43" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/movie/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/src/main/java/org/microservice1/movie/config/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie/src/main/java/org/microservice1/movie/config/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/src/main/java/org/microservice1/movie/security/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/src/test/java/org/microservice1/movie/MovieIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/src/test/java/org/microservice1/movie/config/WireMockConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie/src/test/java/org/microservice1/movie/controller/MovieControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie/src/test/java/org/microservice1/movie/controller/MovieControllerTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2bwGfFNUVBEMaIfDqkVullNdGVF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MovieControllerTest.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieByIdUnauthorized.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieByIdWithMockedAuthentication.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieWithBadRequest.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieWithNotFoundID.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMoviesWithMockedAuthentication.executor": "Run",
+    "Maven.movie [clean,test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MovieApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Spring Boot - Arabic/My Old Spring Data JPA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.MovieControllerTest">
+    <configuration name="MovieControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.microservice1.movie.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.microservice1.movie.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.microservice1.movie.controller.MovieControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieControllerTest.testGetMovieByIdUnauthorized" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.microservice1.movie.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.microservice1.movie.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.microservice1.movie.controller.MovieControllerTest" />
+      <option name="METHOD_NAME" value="testGetMovieByIdUnauthorized" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieControllerTest.testGetMovieByIdWithMockedAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.microservice1.movie.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.microservice1.movie.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.microservice1.movie.controller.MovieControllerTest" />
+      <option name="METHOD_NAME" value="testGetMovieByIdWithMockedAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieControllerTest.testGetMovieWithBadRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.microservice1.movie.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.microservice1.movie.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.microservice1.movie.controller.MovieControllerTest" />
+      <option name="METHOD_NAME" value="testGetMovieWithBadRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieControllerTest.testGetMoviesWithMockedAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.microservice1.movie.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.microservice1.movie.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.microservice1.movie.controller.MovieControllerTest" />
+      <option name="METHOD_NAME" value="testGetMoviesWithMockedAuthentication" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MovieControllerTest" />
+        <item itemvalue="JUnit.MovieControllerTest.testGetMoviesWithMockedAuthentication" />
+        <item itemvalue="JUnit.MovieControllerTest.testGetMovieByIdWithMockedAuthentication" />
+        <item itemvalue="JUnit.MovieControllerTest.testGetMovieByIdUnauthorized" />
+        <item itemvalue="JUnit.MovieControllerTest.testGetMovieWithBadRequest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2991a732-abf0-4d2a-8669-8d13476c9d43" name="Changes" comment="" />
+      <created>1707118828388</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707118828388</updated>
+      <workItem from="1707118881000" duration="11024000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
