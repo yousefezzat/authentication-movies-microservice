@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2991a732-abf0-4d2a-8669-8d13476c9d43" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2991a732-abf0-4d2a-8669-8d13476c9d43" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,33 +25,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.MovieControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieControllerTest.testGetMovieByIdUnauthorized.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieControllerTest.testGetMovieByIdWithMockedAuthentication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieControllerTest.testGetMovieWithBadRequest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieControllerTest.testGetMovieWithNotFoundID.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MovieControllerTest.testGetMoviesWithMockedAuthentication.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.movie [clean,test].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MovieApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Spring Boot - Arabic/My Old Spring Data JPA&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MovieControllerTest.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieByIdUnauthorized.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieByIdWithMockedAuthentication.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieWithBadRequest.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMovieWithNotFoundID.executor": "Run",
+    "JUnit.MovieControllerTest.testGetMoviesWithMockedAuthentication.executor": "Run",
+    "Maven.movie [clean,test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MovieApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Back-end Project/Movies/movie",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.MovieControllerTest">
     <configuration name="MovieControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="movie" />
@@ -168,6 +162,7 @@
       <workItem from="1707135747105" duration="50000" />
       <workItem from="1707135864502" duration="142000" />
       <workItem from="1707136012297" duration="9000" />
+      <workItem from="1707136253850" duration="541000" />
     </task>
     <servers />
   </component>
